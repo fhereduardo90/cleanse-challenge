@@ -46,6 +46,15 @@ module.exports = {
         lastName: 'Romanova',
         active: true,
         address: null,
+        friends: [
+          {
+            nickname: 'Captain America',
+            firstName: 'Steve',
+            lastName: null,
+            active: undefined,
+            address: 'MCU'
+          }
+        ]
       }
     ]
   }

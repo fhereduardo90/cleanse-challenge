@@ -35,6 +35,13 @@ Object {
     Object {
       "active": true,
       "firstName": "Natasha",
+      "friends": Array [
+        Object {
+          "address": "MCU",
+          "firstName": "Steve",
+          "nickname": "Captain America",
+        },
+      ],
       "lastName": "Romanova",
       "nickname": "Black Widow",
     },
