@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cleanse should remove properties with values null or undefined 1`] = `
+Object {
+  "firstName": "Peter",
+  "friends": Array [
+    Object {
+      "age": 0,
+      "lastName": "Banner",
+      "nickname": "hulk",
+    },
+    Object {
+      "address": false,
+      "firstName": "Tony",
+      "friends": Array [
+        Object {
+          "friends": Array [],
+          "nickname": "war machine",
+        },
+      ],
+      "lastName": "Stark",
+      "nickname": "iron man",
+    },
+  ],
+  "lastName": "Parker",
+  "nickname": "spiderman",
+}
+`;
+
+exports[`cleanse should remove properties with values null or undefined 2`] = `
+Object {
+  "active": false,
+  "firstName": "Black",
+  "friends": Array [
+    Object {
+      "active": true,
+      "firstName": "Natasha",
+      "lastName": "Romanova",
+      "nickname": "Black Widow",
+    },
+  ],
+  "lastName": "Panter",
+}
+`;
