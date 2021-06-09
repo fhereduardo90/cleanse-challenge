@@ -49,3 +49,36 @@ Object {
   "lastName": "Panter",
 }
 `;
+
+exports[`cleanse should remove properties with values null or undefined 3`] = `
+Object {
+  "a": "foo",
+  "b": "bar",
+  "e": 0,
+  "f": Object {
+    "a": "fuz",
+    "c": Object {
+      "a": "biz",
+      "b": "buz",
+      "c": Array [
+        Object {
+          "a": "foo",
+          "b": "bar",
+          "e": 0,
+          "f": false,
+        },
+        Object {
+          "a": "foo",
+          "b": "bar",
+          "e": 0,
+        },
+        Object {
+          "a": "foo",
+          "b": "bar",
+          "e": 0,
+        },
+      ],
+    },
+  },
+}
+`;

@@ -7,6 +7,13 @@ function cleanse(data = {}) {
       }
     }
 
+    if (typeof value === 'object' && value != null) {
+      return {
+        ...prev,
+        [key]: cleanse(value)
+      }
+    }
+
     return {
       ...prev,
       ...(value !== null && value !== undefined && { [key]: value })
